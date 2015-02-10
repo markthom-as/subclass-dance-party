@@ -21,7 +21,24 @@ body, a:link, a:visited, a:active{
   background-color: #777;
 }
 .dancer{
-  border:10px solid red;
+  border-radius:10px;
+  position:absolute;
+}
+.dancer.blinky{
+  content: url('blinky.gif');
+  border-radius:10px;
+  position:absolute;
+}
+.dancer.psycho{
+  border:10px solid yellow;
+  border-radius:10px;
+  width: 100px;
+  height: 100px;
+  position:absolute;
+  opacity: 0.4;
+}
+.dancer.wormy{
+  border:10px solid purple;
   border-radius:10px;
   position:absolute;
 }
