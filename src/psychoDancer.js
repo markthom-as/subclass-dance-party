@@ -14,6 +14,6 @@ PsychoDancer.prototype.step = function(){
     this.$node.animate({top: '-=40px'}, 0.3);
     this.$node.animate({top: '+=40px'}, 0.3);
     this.$node.animate({left: '+=20px'}, 0.3);
-    this.setPosition(Math.floor(Math.random() * 1000), Math.floor(Math.random() * 1000));
+    // this.setPosition(Math.floor(Math.random() * 1000), Math.floor(Math.random() * 1000));
 }
 

@@ -30,5 +30,12 @@ $(document).ready(function(){
     $('body').append(dancer.$node);
     window.dancers.push(dancer);
   });
+
+$('body').on('mouseover', '.dancer', function(){
+  $(this).animate({'opacity':'0.1'}, 2000);
+  $(this).animate({'opacity':'1'}, 2000);
 });
+
+});
+
 

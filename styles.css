@@ -1,5 +1,6 @@
 body, html{
   height:100%;
+  background-image: url(concrete.jpg);
 }
 body{
   margin: 0px;
@@ -30,12 +31,9 @@ body, a:link, a:visited, a:active{
   position:absolute;
 }
 .dancer.psycho{
-  border:10px solid yellow;
-  border-radius:10px;
-  width: 100px;
+  content: url('psycho-dancer.png');
   height: 100px;
   position:absolute;
-  opacity: 0.4;
 }
 .dancer.wormy{
   border:10px solid purple;

@@ -2,10 +2,18 @@
 var Dancer = function(top, left, timeBetweenSteps){
   this.timeBetweenSteps = timeBetweenSteps;
   this.$node = $('<span class="dancer"></span>');
-  // console.log('setPosition', this.setPosition);
   this.setPosition(top, left);
   this.step();
-};
+
+//   while (this) {
+//     for ( var i = 0; i < window.dancers.length; i++ ) {
+//       if ( (window.dancers[i].top - this.top) < 100 ) {
+//         this.bump();
+//         window.dancers[i].bump();
+//       }
+//     }
+//   }
+ };
 
 var stepTimeout;
 
@@ -28,15 +36,22 @@ Dancer.prototype.step = function(){
 };
 
 Dancer.prototype.lineUp = function(){
-  for(var i = 0; i<window.dancers.length; i++){
+  for ( var i = 0; i<window.dancers.length; i++ ){
+    var fromTop = 0;
     console.log('dancer', window.dancers[i]);
-    clearTimeout(stepTimeout);
+    // clearTimeout(stepTimeout);
     if (i % 2 === 0) {
       console.log('even: ', i);
-      window.dancers[i].setPosition(0, '25%');
+      window.dancers[i].setPosition(fromTop, '20%');
+      fromTop += 50;
     } else {
-      window.dancers[i].setPosition(0, '75%');
+      window.dancers[i].setPosition(fromTop, '80%');
+      fromTop += 50;
     }
-
   }
-}
+
+};
+
+// Dancer.prototype.bump = function(){
+//   this.$node.animate({'transform': 'rotateY(360deg)', 2000});
+// };
