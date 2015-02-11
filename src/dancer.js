@@ -4,15 +4,6 @@ var Dancer = function(top, left, timeBetweenSteps){
   this.$node = $('<span class="dancer"></span>');
   this.setPosition(top, left);
   this.step();
-
-//   while (this) {
-//     for ( var i = 0; i < window.dancers.length; i++ ) {
-//       if ( (window.dancers[i].top - this.top) < 100 ) {
-//         this.bump();
-//         window.dancers[i].bump();
-//       }
-//     }
-//   }
  };
 
 var stepTimeout;
@@ -52,6 +43,3 @@ Dancer.prototype.lineUp = function(){
 
 };
 
-// Dancer.prototype.bump = function(){
-//   this.$node.animate({'transform': 'rotateY(360deg)', 2000});
-// };
